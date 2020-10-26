@@ -16,10 +16,6 @@ public class AutoDeployNC2PNG extends NC2PNG {
 	private String floodFolder;
 	private String rainfallFolder;
 
-	private TreeMap<Double, String> durationMap;
-	private TreeMap<Double, String> accumulationMap;
-	private TreeMap<Double, String> intensiveMap;
-
 	public AutoDeployNC2PNG(String rootFolder) {
 		this.rootFolder = rootFolder + "\\";
 
