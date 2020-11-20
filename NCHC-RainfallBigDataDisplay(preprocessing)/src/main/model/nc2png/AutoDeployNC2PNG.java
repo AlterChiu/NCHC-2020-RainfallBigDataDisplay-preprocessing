@@ -57,7 +57,7 @@ public class AutoDeployNC2PNG extends NC2PNG {
 			try {
 				Rainfall2PNG rainfallPNG = new Rainfall2PNG(rainfallNcAdd);
 				rainfallPNG.saveAsPNG(temptFolder, "rainfall");
-			} catch (IOException | InterruptedException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 
@@ -66,7 +66,7 @@ public class AutoDeployNC2PNG extends NC2PNG {
 			try {
 				Flood2PNG floodPNG = new Flood2PNG(floodNcAdd);
 				floodPNG.saveAsPNG(temptFolder, "flood");
-			} catch (IOException | InterruptedException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		});

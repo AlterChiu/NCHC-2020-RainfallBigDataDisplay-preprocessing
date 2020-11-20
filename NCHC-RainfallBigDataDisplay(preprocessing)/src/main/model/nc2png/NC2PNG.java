@@ -90,7 +90,7 @@ public class NC2PNG {
 	}
 
 	protected void saveAsPNG(String outputFolder, String folderName, Map<Double, Integer[]> colorStyle,
-			NetcdfBasicControl nc, String valueVariableKey) throws IOException, InterruptedException {
+			NetcdfBasicControl nc, String valueVariableKey) throws Exception {
 
 		// doing the save folder
 		String saveFolder = outputFolder + "\\" + folderName + "\\";
